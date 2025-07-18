@@ -79,7 +79,7 @@ section {
 }
 @media (max-width: 1280px) {
   section {
-    padding: 120px 7em;
+    padding: 120px 10em;
   }
 }
 
@@ -205,7 +205,7 @@ h1 {
   height: 90vh;
   overflow: hidden;
 }
-@media (max-width: 480px) {
+@media (max-width: 1280px) {
   .hero {
     height: 88vh;
   }
@@ -233,9 +233,14 @@ h1 {
     height: 88vh;
   }
 }
+@media screen and (max-width: 1024px) {
+  .hero__temple {
+    width: 88% !important;
+  }
+}
 @media (max-width: 1280px) {
   .hero__temple {
-    width: 88%;
+    width: 64.7%;
   }
 }
 .hero__vertical-text {
@@ -252,7 +257,7 @@ h1 {
 @media (max-width: 480px) {
   .hero__vertical-text {
     right: 5em !important;
-    top: 15% !important;
+    top: 16% !important;
     flex-direction: row !important;
   }
 }
