@@ -10,8 +10,12 @@
 // BODY
 // ========================================
 
-.body {
+body {
     color: $text-color !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url("../../../threedragons-source/assets/img/decor/banner-texture.png");
 }
 
 // ========================================
@@ -22,4 +26,19 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+// ========================================
+// SECTION
+// ========================================
+section {
+    padding: 140px 0;
+
+    @include respond-to(lg) {
+        padding: 80px 1em !important;
+    }
+
+    @include respond-to(xxl) {
+        padding: 120px 7em;
+    }
 }

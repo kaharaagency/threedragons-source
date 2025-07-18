@@ -1,4 +1,13 @@
 // ========================================
+// TITLES
+// ========================================
+
+@mixin title {
+    text-transform: uppercase;
+    font-family: $font-title;
+}
+
+// ========================================
 // RESPONSIVE
 // ========================================
 
@@ -45,3 +54,18 @@
         }
     }
 }
+
+// ========================================
+// BORDER
+// ========================================
+
+@mixin border-position($position) {
+    .border-#{$position} {
+        border-#{$position}: 1px solid $text-color !important;
+    }
+}
+
+@include border-position(top);
+@include border-position(bottom);
+@include border-position(left);
+@include border-position(right);

@@ -36,10 +36,48 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 text-left">
-                    <button class="btn btn-menu position-relative bg-primary">
+                    <button class="btn btn-menu position-relative bg-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span class="btn-icon icon-default"><i class="fa-solid fa-bars-staggered"></i></span>
                         <span class="btn-icon icon-hover"><i class="fa-solid fa-bars"></i></span>
                     </button>
+                    <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-uppercase">
+                                        Accueil
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-uppercase">
+                                        À propos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-uppercase">
+                                        La carte
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-uppercase">
+                                        Commander / Réserver
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-uppercase">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 text-center col-brand">
                     <a href="index.html" class="navbar-brand text-uppercase text-dark">
@@ -48,13 +86,36 @@
                 </div>
                 <div class="col-md-4 text-end col-btn">
                     <a href="tel:0700000000" class="btn btn-primary btn-booking">
-                        <i class="fa-solid fa-phone"></i> 
-                        <span class="txt-btn">Commander / Réserver</span>    
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="txt-btn">Commander / Réserver</span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
+
+    <main class="main" role="main">
+        <section class="hero">
+            <div class="hero__overlay"></div>
+            <img src="assets/img/decor/asian-temple.png" class="hero__temple" alt="Temple asiatique"
+                aria-label="Temple asiatique">
+            <div class="hero__vertical-text">
+                <span>中<br>国</span>
+                <span>日<br>本</span>
+                <span>한<br>국<br>어</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="text-dark">
+                            Trois Dragons, Mille Saveurs À Partager
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-top"></section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
