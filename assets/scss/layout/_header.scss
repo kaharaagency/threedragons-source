@@ -1,0 +1,82 @@
+.header {
+    border-bottom: 1px solid $text-color;
+
+    // GÉNÉRAL
+
+    .col-brand,
+    .col-btn {
+        padding: 16px 0;
+    }
+
+    .col-brand {
+        @include respond-to(sm) {
+            padding-top: 24px !important;
+        }
+    }
+
+    .col-btn {
+        padding-right: 20px;
+
+        @include respond-to(xs) {
+            display: none !important;
+        }
+    }
+
+    .col-md-4 {
+        @include respond-to(xl) {
+            width: 33.33% !important;
+        }
+    }
+
+    // BUTTON MENU
+
+    .btn-menu {
+        left: -12px;
+        width: 88px;
+        border: none !important;
+        padding: 25px !important;
+        border-radius: 0px !important;
+
+        .btn-icon {
+            font-size: 25px;
+            color: $background-color;
+        }
+
+        .icon-hover {
+            display: none;
+        }
+
+        &:hover {
+            .icon-default {
+                display: none !important;
+            }
+
+            .icon-hover {
+                display: block !important;
+            }
+        }
+    }
+
+    // BRAND
+
+    .navbar-brand {
+        font-size: 32px;
+        font-family: $font-title;
+
+        @include respond-to(sm) {
+            font-size: 22px !important;
+        }
+    }
+
+    // BOOKING BUTTON
+    .btn-booking {
+        .txt-btn {
+            margin-left: 5px;
+
+            @include respond-to(xl) {
+                display: none !important;
+            }
+        }
+    }
+
+}

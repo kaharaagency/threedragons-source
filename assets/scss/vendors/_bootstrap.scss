@@ -1,0 +1,48 @@
+// ========================================
+// BACKGROUND
+// ========================================
+
+.bg-dark {
+    background-color: $text-color !important;
+}
+
+.bg-light {
+    background-color: $background-color !important;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.bg-secondary {
+    background-color: $secondary-color !important;
+}
+
+// ========================================
+// COLOR
+// ========================================
+
+.text-dark {
+    color: $text-color !important;
+}
+
+.text-light {
+    color: $background-color !important;
+}
+
+// ========================================
+// BUTTON
+// ========================================
+
+.btn-primary {
+    color: $primary-color;
+    border: 1px solid $primary-color !important;
+    background-color: transparent !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $background-color !important;
+        background-color: $primary-color !important;
+    }
+}

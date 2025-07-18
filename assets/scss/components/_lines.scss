@@ -1,0 +1,10 @@
+.line {
+    height: 100vh;
+    width: 1px;
+    left: 86px;
+    position: absolute !important;
+
+    @include respond-to(sm) {
+        display: none !important;
+    }
+}
