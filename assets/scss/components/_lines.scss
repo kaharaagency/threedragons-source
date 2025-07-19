@@ -1,10 +1,10 @@
 .line {
-    height: 100vh;
+    height: $full-height;
     width: 1px;
     left: 86px;
     position: absolute !important;
 
-    @include respond-to(lg) {
+    @include respond-to(xxl) {
         display: none !important;
     }
 }

@@ -12,9 +12,7 @@
 
 body {
     color: $text-color !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    @include background-image;
     background-image: url("../../../threedragons-source/assets/img/decor/banner-texture.png");
 }
 
@@ -23,7 +21,7 @@ body {
 // ========================================
 
 img {
-    width: 100%;
+    width: $full-width;
     height: auto;
     object-fit: cover;
 }
@@ -32,13 +30,13 @@ img {
 // SECTION
 // ========================================
 section {
-    padding: 140px 0;
+    padding: $padding-section-desktop;
 
     @include respond-to(lg) {
-        padding: 80px 1em !important;
+        padding: $padding-section-mobile !important
     }
 
     @include respond-to(xxl) {
-        padding: 120px 10em;
+        padding: $padding-section-tablet !important;
     }
 }

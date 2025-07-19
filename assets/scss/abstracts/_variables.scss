@@ -23,8 +23,8 @@ $breakpoint-sm: 480px;
 $breakpoint-md: 576px; 
 $breakpoint-lg: 768px; 
 $breakpoint-xl: 992px; 
-$breakpoint-xxl: 1280px; 
-$breakpoint-xxxl: 1480px;
+$breakpoint-xxl: 1024px;
+$breakpoint-xxxl: 1280px; 
 
 // ========================================
 // FONTS
@@ -39,9 +39,25 @@ $font-subtitle: "ZCOOL XiaoWei", sans-serif;
 // ========================================
 
 $padding-button: 16px 26px;
+$padding-section-mobile: 80px 1em;
+$padding-section-tablet: 120px 2em; 
+$padding-section-desktop: 140px 0px;
 
 // ========================================
 // OVERFLOW
 // ========================================
 
 $overflow-hidden: hidden; 
+
+// ========================================
+// HEIGHT & WIDTH
+// ========================================
+
+$half-width: 50%;
+
+$full-height: 100%; 
+$full-width: 100%;
+
+// ========================================
+// BREAKPOINTS
+// ========================================

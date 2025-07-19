@@ -16,9 +16,9 @@ h6 {
 // ========================================
 
 h1 {
-    font-size: 6em;
+    font-size: 5.5em;
 
     @include respond-to(xxl) {
-        font-size: 4em;
+        font-size: 3.5em;
     }
 }

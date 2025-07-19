@@ -2,64 +2,58 @@
     height: 90vh;
     overflow: $overflow-hidden;
 
-    @include respond-to(xxl) {
-        height: 88vh;
-    }
-
-    &__overlay {
-        top: -3px;
-        left: 50%;
-        height: 100vh;
-        transform: translateX(-50%);
-        z-index: -1;
-        width: 33%;
-        position: absolute;
-        background-color: $secondary-color;
+    @include respond-to(sm) {
+        height: 86vh !important;
     }
 
     &__temple {
-        top: 88px;
-        right: 0;
-        bottom: 0;
-        width: 55.7%;
-        z-index: 0;
-        position: absolute;
+        top: 0;
+        right: 0em;
+        width: 64%;
 
         @include respond-to(sm) {
-            height: 88vh;
+            width: $full-width !important;
+            height: 100vh !important;
         }
-
-        @media screen and (max-width: 1024px) {
-            width: 88% !important;
-        }
-
-        @include respond-to(xxl) {
-            width: 64.7%;
-        }
-
     }
-
+  
     &__vertical-text {
-        position: absolute;
-        right: 4em;
-        top: 20%;
-        display: flex;
-        flex-direction: column;
+        top: 15%;
+        right: 20em;
         gap: 1rem;
-        color: $text-color;
-        opacity: 0.7;
+        opacity: 0.5;
         font-family: $font-subtitle;
 
         @include respond-to(sm) {
-            right: 5em !important;
-            top: 16% !important;
-            flex-direction: row !important;
+            right: 1em !important;
+            top: 20% !important;
         }
 
-        @include respond-to(xxl) {
-            right: 3em;
-            top: 13%;
+        span {
+            font-size: 25px;
+
+            @include respond-to(sm) {
+                font-size: 12px;
+            }
         }
     }
+
+    // &__vertical-text {
+    //     gap: 1rem;
+    //     color: $text-color;
+    //     opacity: 0.7;
+    //     font-family: $font-subtitle;
+
+    //     @include respond-to(sm) {
+    //         right: 5em !important;
+    //         top: 16% !important;
+    //         flex-direction: row !important;
+    //     }
+
+    //     @include respond-to(xxl) {
+    //         right: 3em;
+    //         top: 13%;
+    //     }
+    // }
 
 }
